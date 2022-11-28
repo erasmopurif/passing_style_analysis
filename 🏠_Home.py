@@ -1,15 +1,10 @@
 import streamlit as st
 import base64
-import pandas as pd
-import json
-from io import BytesIO
-
-import utils
 
 
 # Page config
 st.set_page_config(
-    page_title="Passing Style Analysis",
+    page_title="Passing Style Analyzer",
     page_icon="⚽️",
     layout="wide"
 )
@@ -49,7 +44,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.title("Passing Style Analysis - Serie A 2021/22")
+st.title("Passing Style Analyzer - Serie A 2021/22")
 
 
 # App description
