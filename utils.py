@@ -843,7 +843,10 @@ def plot_team_match_status_formation_info(team, matchday_list, teams_match_statu
     plt.setp(axs["formations"].get_xticklabels(), color="azure")
     plt.setp(axs["formations"].get_yticklabels(), color="azure")
 
-    fig.suptitle("Formations and match status info for {} in matchdays {}-{}\n".format(team, min(matchday_list), max(matchday_list)), size=15, color="azure")
+    if len(matchday_list) == 1:
+        fig.suptitle("Formations and match status info for {} in matchday {}\n".format(team, matchday_list[0]), size=15, color="azure")
+    else:
+        fig.suptitle("Formations and match status info for {} in matchdays {}-{}\n".format(team, min(matchday_list), max(matchday_list)), size=15, color="azure")
 
     return fig
 
@@ -968,6 +971,9 @@ def plot_match_status_networks(df_soccment, team, matchday_list, teams_lineups, 
         axs[status_list[i]].set_title(status_list[i], fontdict=title_props)
 
     # Set figure title
-    fig.suptitle("Passing distribution and barycenter for {} in matchdays {}-{} (for each match status)".format(team, min(matchday_list), max(matchday_list)), size=20, color="white")
+    if len(matchday_list) == 1:
+        fig.suptitle("Passing distribution and barycenter for {} in matchday {} (for each match status)".format(team, matchday_list[0], size=20, color="white"))
+    else:
+        fig.suptitle("Passing distribution and barycenter for {} in matchdays {}-{} (for each match status)".format(team, min(matchday_list), max(matchday_list)), size=20, color="white")
 
     return fig
