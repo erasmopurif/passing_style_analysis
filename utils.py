@@ -972,7 +972,7 @@ def plot_match_status_networks(df_soccment, team, matchday_list, teams_lineups, 
 
     # Set figure title
     if len(matchday_list) == 1:
-        fig.suptitle("Passing distribution and barycenter for {} in matchday {} (for each match status)".format(team, matchday_list[0], size=20, color="white"))
+        fig.suptitle("Passing distribution and barycenter for {} in matchday {} (for each match status)".format(team, matchday_list[0]), size=20, color="white")
     else:
         fig.suptitle("Passing distribution and barycenter for {} in matchdays {}-{} (for each match status)".format(team, min(matchday_list), max(matchday_list)), size=20, color="white")
 
