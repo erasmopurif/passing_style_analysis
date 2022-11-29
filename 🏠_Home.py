@@ -44,7 +44,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.title("Passing Style Analyzer - Serie A 2021/22")
+st.title("Passing Style Analyser - Serie A 2021/22")
 
 
 # App description
