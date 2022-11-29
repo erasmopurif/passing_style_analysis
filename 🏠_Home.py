@@ -4,7 +4,7 @@ import base64
 
 # Page config
 st.set_page_config(
-    page_title="Passing Style Analyzer",
+    page_title="Passing Style Analyser",
     page_icon="⚽️",
     layout="wide"
 )

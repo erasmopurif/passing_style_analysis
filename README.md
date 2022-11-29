@@ -1,4 +1,4 @@
-# Passing Style Analysis - Serie A 2021/22
+# Passing Style Analyser - Serie A 2021/22
 
 Final thesis for the [2nd course on Football Data Intelligence](https://www.sics.it/corso-football-data-intelligence/) organized by [SICS](https://www.sics.it/en/) and [Soccerment](https://soccerment.com/).
 
