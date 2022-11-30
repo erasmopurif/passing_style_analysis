@@ -762,7 +762,7 @@ def plot_multiple_matchdays_all_teams(df_soccment, team_list, matchday_list, tea
         axs[team_list[i]].text(100, -8, "Most used formation: {}\n({}/{} games - {}')".format(most_used[0], len(mins_lineups[most_used[0]]["matchdays"]), max(matchday_list), int(mins_lineups[most_used[0]]["tot_mins"])), size=35, color="azure")
 
     # Set figure title
-    fig.suptitle("Passing networks for matchday {}\n".format(matchday), size=50, color="azure")
+    fig.suptitle("Passing networks for matchdays {}-{}\n".format(min(matchday_list), max(matchday_list)), size=50, color="azure")
 
     # Plot colorbar
     cbar = matplotlib.colorbar.ColorbarBase(ax=axs["cm"], orientation="horizontal", cmap="viridis", norm=norm_col)
